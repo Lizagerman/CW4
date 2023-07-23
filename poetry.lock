@@ -129,6 +129,17 @@ files = [
 ]
 
 [[package]]
+name = "docopt"
+version = "0.6.2"
+description = "Pythonic argument parser, that will make you smile"
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "docopt-0.6.2.tar.gz", hash = "sha256:49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491"},
+]
+
+[[package]]
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
@@ -363,7 +374,21 @@ secure = ["certifi", "cryptography (>=1.9)", "idna (>=2.0.0)", "pyopenssl (>=17.
 socks = ["pysocks (>=1.5.6,!=1.5.7,<2.0)"]
 zstd = ["zstandard (>=0.18.0)"]
 
+[[package]]
+name = "utl"
+version = "1.0.1"
+description = "A simple tool that shows available tests without executing\n    them."
+category = "main"
+optional = false
+python-versions = "*"
+files = [
+    {file = "utl-1.0.1.tar.gz", hash = "sha256:5d8ed88aa371a9907e7df355bbedf3aae4d4e0d824b260aebe4cad496472b81b"},
+]
+
+[package.dependencies]
+docopt = "*"
+
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "04eb09a745cb4a7f5fda3d6cecebc34ee48614a4dd52b74bdf3534031af59e63"
+content-hash = "46ca0d8513a55b8a834248a4e29f3aaaab8b277a1a6fe8622903c50ba783a00e"

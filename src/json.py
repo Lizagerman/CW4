@@ -54,4 +54,7 @@ class JsonFile:
                     arch_vacancy[position] = f"{i} {len(json_data[i])}"
             else:
                 arch_vacancy = {}
-                
+
+
+class JobSearchService:
+    pass
