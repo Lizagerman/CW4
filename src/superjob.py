@@ -1,7 +1,7 @@
 import os
 import re
 import requests
-from src.jss import JobSearchService
+from src.json import JobSearchService
 from src.vacancy import Vacancy, ValidationVacancy
 from pydantic import ValidationError
 from utl.utils import check_vacancy_company
