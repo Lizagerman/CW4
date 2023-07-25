@@ -3,7 +3,7 @@ import requests
 from src.jss import JobSearchService
 from src.vacancy import Vacancy, ValidationVacancy
 from pydantic import ValidationError
-from utl.utils import srt_datetime_utf, check_salary, get_experience_vacancy
+from utils import srt_datetime_utf, check_salary, get_experience_vacancy
 
 
 class HeadHunterAPI(JobSearchService):
@@ -39,7 +39,7 @@ class HeadHunterAPI(JobSearchService):
                 page += len(hh_vacancies['items'])
                 end_page = False
             for vacancy in hh_vacancies['items']:
-                # Если загружать все 2000 страниц то HH отмечает DDoS блочит на 5 минут
+                # Если загружать все 2000 страниц, то HH отмечает DDoS блочит на 5 минут
                 hh_vacancy = get_experience_vacancy(vacancy['url'])
                 data_vacancies['site'] = "HH"
                 data_vacancies['name'] = hh_vacancy['name']
